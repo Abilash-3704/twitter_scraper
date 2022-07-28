@@ -14,11 +14,12 @@ export default function Search() {
     const handleClick=async()=>{
         const options = {
                     method: 'GET',
-                    url: 'https://twitter-scraper2.p.rapidapi.com/api/v1/search',
-                    params: {searchTerms:`${state}`, maxTweets: '100'},
+                    url: 'https://twitter-scraper2.p.rapidapi.com/api/v2/search',
+                        // 'https://twitter-scraper2.p.rapidapi.com/api/v2/search'
+                    params: {allOfTheseWords:`${state}`},
                     headers: {
                         'X-RapidAPI-Host': 'twitter-scraper2.p.rapidapi.com',
-                        'X-RapidAPI-Key': '8ae8ab8326msh165c315602469e9p17454djsnc3b3ae6594f4'
+                        'X-RapidAPI-Key': '6cfa7223b6msh4fa7ed32dc9281dp13c397jsn702685bb139d'
                     }
 };
         setisLoading(true)
